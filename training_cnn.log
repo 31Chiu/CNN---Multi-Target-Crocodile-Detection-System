@@ -117,3 +117,65 @@
 2025-09-03 15:47:16,807 - INFO - Epoch 49 / 50 | Train Loss:  0.2391 Acc:  0.9019 | Val Loss:  0.2993 Acc:  0.8789
 2025-09-03 15:47:47,348 - INFO - Epoch 50 / 50 | Train Loss:  0.2428 Acc:  0.8981 | Val Loss:  0.3080 Acc:  0.8731
 2025-09-03 15:47:47,348 - INFO - Training complete. Best validation accuracy:  0.8842
+2025-09-03 18:51:30,053 - INFO - Number of classes: 2
+2025-09-03 18:51:30,053 - INFO - Class names: ['crocodile', 'non-crocodile']
+2025-09-03 18:51:30,417 - INFO - Model weights initialized with Glorot (Xavier) Normal.
+2025-09-03 18:51:30,506 - INFO - Starting training on device: cuda
+2025-09-03 18:52:03,213 - INFO - Epoch 1 / 50 | Train Loss:  0.5737 Acc:  0.7158 | Val Loss:  0.5941 Acc:  0.7714
+2025-09-03 18:52:03,678 - INFO - Best model updated and saved: custom_cnn_checkpoint\best_custom_cnn_model.pth
+2025-09-03 18:52:32,983 - INFO - Epoch 2 / 50 | Train Loss:  0.4543 Acc:  0.7936 | Val Loss:  0.4085 Acc:  0.8187
+2025-09-03 18:52:33,448 - INFO - Best model updated and saved: custom_cnn_checkpoint\best_custom_cnn_model.pth
+2025-09-03 18:53:02,716 - INFO - Epoch 3 / 50 | Train Loss:  0.4207 Acc:  0.8131 | Val Loss:  0.4057 Acc:  0.8194
+2025-09-03 18:53:03,171 - INFO - Best model updated and saved: custom_cnn_checkpoint\best_custom_cnn_model.pth
+2025-09-03 18:53:32,615 - INFO - Epoch 4 / 50 | Train Loss:  0.4101 Acc:  0.8212 | Val Loss:  0.3724 Acc:  0.8366
+2025-09-03 18:53:33,059 - INFO - Best model updated and saved: custom_cnn_checkpoint\best_custom_cnn_model.pth
+2025-09-03 18:54:02,415 - INFO - Epoch 5 / 50 | Train Loss:  0.3816 Acc:  0.8329 | Val Loss:  0.3274 Acc:  0.8621
+2025-09-03 18:54:02,869 - INFO - Best model updated and saved: custom_cnn_checkpoint\best_custom_cnn_model.pth
+2025-09-03 18:54:32,284 - INFO - Epoch 6 / 50 | Train Loss:  0.3716 Acc:  0.8384 | Val Loss:  0.3584 Acc:  0.8488
+2025-09-03 18:55:01,576 - INFO - Epoch 7 / 50 | Train Loss:  0.3731 Acc:  0.8389 | Val Loss:  0.3500 Acc:  0.8457
+2025-09-03 18:55:30,929 - INFO - Epoch 8 / 50 | Train Loss:  0.3573 Acc:  0.8379 | Val Loss:  0.3330 Acc:  0.8640
+2025-09-03 18:55:31,386 - INFO - Best model updated and saved: custom_cnn_checkpoint\best_custom_cnn_model.pth
+2025-09-03 18:56:01,414 - INFO - Epoch 9 / 50 | Train Loss:  0.3349 Acc:  0.8599 | Val Loss:  0.3409 Acc:  0.8533
+2025-09-03 18:56:31,178 - INFO - Epoch 10 / 50 | Train Loss:  0.3268 Acc:  0.8580 | Val Loss:  0.3481 Acc:  0.8579
+2025-09-03 18:57:00,887 - INFO - Epoch 11 / 50 | Train Loss:  0.3291 Acc:  0.8573 | Val Loss:  0.3586 Acc:  0.8434
+2025-09-03 18:57:30,731 - INFO - Epoch 12 / 50 | Train Loss:  0.3143 Acc:  0.8699 | Val Loss:  0.4752 Acc:  0.7947
+2025-09-03 18:58:00,392 - INFO - Epoch 13 / 50 | Train Loss:  0.2812 Acc:  0.8819 | Val Loss:  0.2814 Acc:  0.8872
+2025-09-03 18:58:00,865 - INFO - Best model updated and saved: custom_cnn_checkpoint\best_custom_cnn_model.pth
+2025-09-03 18:58:30,670 - INFO - Epoch 14 / 50 | Train Loss:  0.2670 Acc:  0.8897 | Val Loss:  0.2982 Acc:  0.8762
+2025-09-03 18:59:00,981 - INFO - Epoch 15 / 50 | Train Loss:  0.2665 Acc:  0.8919 | Val Loss:  0.3009 Acc:  0.8754
+2025-09-03 18:59:30,623 - INFO - Epoch 16 / 50 | Train Loss:  0.2678 Acc:  0.8895 | Val Loss:  0.2926 Acc:  0.8777
+2025-09-03 19:00:00,424 - INFO - Epoch 17 / 50 | Train Loss:  0.2467 Acc:  0.8947 | Val Loss:  0.3075 Acc:  0.8701
+2025-09-03 19:00:30,010 - INFO - Epoch 18 / 50 | Train Loss:  0.2636 Acc:  0.8897 | Val Loss:  0.3046 Acc:  0.8724
+2025-09-03 19:00:59,810 - INFO - Epoch 19 / 50 | Train Loss:  0.2453 Acc:  0.8907 | Val Loss:  0.3000 Acc:  0.8712
+2025-09-03 19:01:29,480 - INFO - Epoch 20 / 50 | Train Loss:  0.2552 Acc:  0.8907 | Val Loss:  0.2956 Acc:  0.8789
+2025-09-03 19:01:59,042 - INFO - Epoch 21 / 50 | Train Loss:  0.2529 Acc:  0.8974 | Val Loss:  0.2981 Acc:  0.8754
+2025-09-03 19:02:28,734 - INFO - Epoch 22 / 50 | Train Loss:  0.2504 Acc:  0.8990 | Val Loss:  0.3020 Acc:  0.8709
+2025-09-03 19:02:58,519 - INFO - Epoch 23 / 50 | Train Loss:  0.2551 Acc:  0.8943 | Val Loss:  0.2971 Acc:  0.8770
+2025-09-03 19:03:28,217 - INFO - Epoch 24 / 50 | Train Loss:  0.2507 Acc:  0.8938 | Val Loss:  0.3033 Acc:  0.8716
+2025-09-03 19:03:58,218 - INFO - Epoch 25 / 50 | Train Loss:  0.2655 Acc:  0.8919 | Val Loss:  0.2970 Acc:  0.8808
+2025-09-03 19:04:28,134 - INFO - Epoch 26 / 50 | Train Loss:  0.2508 Acc:  0.8974 | Val Loss:  0.3081 Acc:  0.8686
+2025-09-03 19:04:58,027 - INFO - Epoch 27 / 50 | Train Loss:  0.2510 Acc:  0.8962 | Val Loss:  0.3023 Acc:  0.8728
+2025-09-03 19:05:27,614 - INFO - Epoch 28 / 50 | Train Loss:  0.2564 Acc:  0.8967 | Val Loss:  0.2972 Acc:  0.8819
+2025-09-03 19:05:57,447 - INFO - Epoch 29 / 50 | Train Loss:  0.2495 Acc:  0.8959 | Val Loss:  0.3023 Acc:  0.8697
+2025-09-03 19:06:27,327 - INFO - Epoch 30 / 50 | Train Loss:  0.2603 Acc:  0.8914 | Val Loss:  0.2967 Acc:  0.8804
+2025-09-03 19:06:56,925 - INFO - Epoch 31 / 50 | Train Loss:  0.2458 Acc:  0.8998 | Val Loss:  0.2959 Acc:  0.8796
+2025-09-03 19:07:26,730 - INFO - Epoch 32 / 50 | Train Loss:  0.2509 Acc:  0.8988 | Val Loss:  0.2954 Acc:  0.8808
+2025-09-03 19:07:56,984 - INFO - Epoch 33 / 50 | Train Loss:  0.2559 Acc:  0.8893 | Val Loss:  0.2949 Acc:  0.8792
+2025-09-03 19:08:26,775 - INFO - Epoch 34 / 50 | Train Loss:  0.2491 Acc:  0.8895 | Val Loss:  0.3006 Acc:  0.8735
+2025-09-03 19:08:56,574 - INFO - Epoch 35 / 50 | Train Loss:  0.2399 Acc:  0.9033 | Val Loss:  0.2981 Acc:  0.8815
+2025-09-03 19:09:26,323 - INFO - Epoch 36 / 50 | Train Loss:  0.2517 Acc:  0.8905 | Val Loss:  0.2977 Acc:  0.8747
+2025-09-03 19:09:56,153 - INFO - Epoch 37 / 50 | Train Loss:  0.2531 Acc:  0.8976 | Val Loss:  0.2952 Acc:  0.8781
+2025-09-03 19:10:25,892 - INFO - Epoch 38 / 50 | Train Loss:  0.2507 Acc:  0.8995 | Val Loss:  0.3009 Acc:  0.8735
+2025-09-03 19:10:55,602 - INFO - Epoch 39 / 50 | Train Loss:  0.2493 Acc:  0.8967 | Val Loss:  0.3012 Acc:  0.8716
+2025-09-03 19:11:25,406 - INFO - Epoch 40 / 50 | Train Loss:  0.2537 Acc:  0.8907 | Val Loss:  0.2962 Acc:  0.8830
+2025-09-03 19:11:55,186 - INFO - Epoch 41 / 50 | Train Loss:  0.2575 Acc:  0.8931 | Val Loss:  0.2982 Acc:  0.8758
+2025-09-03 19:12:25,401 - INFO - Epoch 42 / 50 | Train Loss:  0.2572 Acc:  0.8902 | Val Loss:  0.2977 Acc:  0.8750
+2025-09-03 19:12:55,036 - INFO - Epoch 43 / 50 | Train Loss:  0.2527 Acc:  0.8964 | Val Loss:  0.3096 Acc:  0.8682
+2025-09-03 19:13:24,635 - INFO - Epoch 44 / 50 | Train Loss:  0.2488 Acc:  0.8976 | Val Loss:  0.2975 Acc:  0.8781
+2025-09-03 19:13:54,313 - INFO - Epoch 45 / 50 | Train Loss:  0.2451 Acc:  0.8967 | Val Loss:  0.2942 Acc:  0.8834
+2025-09-03 19:14:23,972 - INFO - Epoch 46 / 50 | Train Loss:  0.2455 Acc:  0.8998 | Val Loss:  0.3072 Acc:  0.8690
+2025-09-03 19:14:53,626 - INFO - Epoch 47 / 50 | Train Loss:  0.2639 Acc:  0.8890 | Val Loss:  0.2998 Acc:  0.8747
+2025-09-03 19:15:23,654 - INFO - Epoch 48 / 50 | Train Loss:  0.2513 Acc:  0.8986 | Val Loss:  0.2962 Acc:  0.8792
+2025-09-03 19:15:53,318 - INFO - Epoch 49 / 50 | Train Loss:  0.2387 Acc:  0.8995 | Val Loss:  0.2974 Acc:  0.8830
+2025-09-03 19:16:23,219 - INFO - Epoch 50 / 50 | Train Loss:  0.2429 Acc:  0.8974 | Val Loss:  0.2991 Acc:  0.8739
+2025-09-03 19:16:23,219 - INFO - Training complete. Best validation accuracy:  0.8872
