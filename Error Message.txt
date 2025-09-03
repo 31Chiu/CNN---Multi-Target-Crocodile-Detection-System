@@ -1,0 +1,16 @@
+2025-09-03 17:24:54,254 - INFO - Loading the best CustomCNN26 model as the feature extractor...
+Traceback (most recent call last):
+  File "c:\Users\Student\Desktop\Chiu Siew Chin\CNN Series\CNN---Multi-Target-Crocodile-Detection-System\svm_classifier_cnn.py", line 183, in <module>
+    main()
+  File "c:\Users\Student\Desktop\Chiu Siew Chin\CNN Series\CNN---Multi-Target-Crocodile-Detection-System\svm_classifier_cnn.py", line 176, in main
+    classifier = SVMHybridTrainerCNN(train_dir=train_dir, val_dir=val_dir, batch_size=32)
+                 ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "c:\Users\Student\Desktop\Chiu Siew Chin\CNN Series\CNN---Multi-Target-Crocodile-Detection-System\svm_classifier_cnn.py", line 88, in __init__
+    self.feature_extractor = self._load_feature_extractor()
+                             ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "c:\Users\Student\Desktop\Chiu Siew Chin\CNN Series\CNN---Multi-Target-Crocodile-Detection-System\svm_classifier_cnn.py", line 124, in _load_feature_extractor
+    model.load_state_dict(checkpoint['model_state_dict'])
+  File "C:\Users\Student\AppData\Local\Programs\Python\Python311\Lib\site-packages\torch\nn\modules\module.py", line 2152, in load_state_dict
+    raise RuntimeError('Error(s) in loading state_dict for {}:\n\t{}'.format(
+RuntimeError: Error(s) in loading state_dict for CustomCNN26:
+        Unexpected key(s) in state_dict: "stage4.0.conv.weight", "stage4.0.bn.weight", "stage4.0.bn.bias", "stage4.0.bn.running_mean", "stage4.0.bn.running_var", "stage4.0.bn.num_batches_tracked", "stage4.1.conv.weight", "stage4.1.bn.weight", "stage4.1.bn.bias", "stage4.1.bn.running_mean", "stage4.1.bn.running_var", "stage4.1.bn.num_batches_tracked", "stage1.3.conv.weight", "stage1.3.bn.weight", "stage1.3.bn.bias", "stage1.3.bn.running_mean", "stage1.3.bn.running_var", "stage1.3.bn.num_batches_tracked". 
