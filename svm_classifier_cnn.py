@@ -58,11 +58,11 @@ class CustomCNN26(nn.Module):
         layers.append(ConvBlock(in_channels, out_channels, stride=2))
         for _ in range(1, num_blocks - 1):
             layers.append(ConvBlock(out_channels, out_channels))
-            if final_out_channels:
-                layers.append(ConvBlock(out_channels, final_out_channels))
-            else:
-                layers.append(ConvBlock(out_channels, out_channels))
-            return nn.Sequential(*layers)
+        if final_out_channels:
+            layers.append(ConvBlock(out_channels, final_out_channels))
+        else:
+            layers.append(ConvBlock(out_channels, out_channels))
+        return nn.Sequential(*layers)
         
     def forward(self, x):
         x = self.pool1(self.initial_conv(x))
