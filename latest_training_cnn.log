@@ -309,3 +309,136 @@
 2026-03-03 17:28:32,942 - INFO - Epoch 49/50 [LR: 0.000010] | Train -> Loss: 0.2759 Acc: 0.8821 Prec: 0.8807 Rec: 0.8833 | Val -> Loss: 0.2943 Acc: 0.8781 Prec: 0.8712 Rec: 0.8669
 2026-03-03 17:29:03,145 - INFO - Epoch 50/50 [LR: 0.000001] | Train -> Loss: 0.2780 Acc: 0.8757 Prec: 0.8755 Rec: 0.8751 | Val -> Loss: 0.2932 Acc: 0.8800 Prec: 0.8836 Rec: 0.8555
 2026-03-03 17:29:03,145 - INFO - Training complete. Best validation accuracy:  0.8949
+2026-03-03 17:52:13,603 - INFO - Number of classes: 2
+2026-03-03 17:52:13,603 - INFO - Class names: ['crocodile', 'non-crocodile']
+2026-03-03 17:52:13,956 - INFO - Model weights initialized with Glorot (Xavier) Normal.
+2026-03-03 17:52:14,056 - INFO - Starting training on device: cuda
+2026-03-03 17:52:50,116 - INFO - Epoch 01/50 [LR: 0.001000] | Train -> Loss: 0.6614 Acc: 0.6246 Prec: 0.6218 Rec: 0.6316 mAP: 0.6654 | Val -> Loss: 0.7882 Acc: 0.6808 Prec: 0.6189 Rec: 0.8220 mAP: 0.6944
+2026-03-03 17:52:50,598 - INFO - Best model updated and saved: custom_cnn_checkpoint\best_custom_cnn_model.pth
+2026-03-03 17:53:24,186 - INFO - Epoch 02/50 [LR: 0.001000] | Train -> Loss: 0.5757 Acc: 0.7084 Prec: 0.7140 Rec: 0.6928 mAP: 0.7831 | Val -> Loss: 0.3767 Acc: 0.8442 Prec: 0.8328 Rec: 0.8335 mAP: 0.9112
+2026-03-03 17:53:24,661 - INFO - Best model updated and saved: custom_cnn_checkpoint\best_custom_cnn_model.pth
+2026-03-03 17:53:58,208 - INFO - Epoch 03/50 [LR: 0.001000] | Train -> Loss: 0.5314 Acc: 0.7346 Prec: 0.7433 Rec: 0.7148 mAP: 0.8207 | Val -> Loss: 0.5700 Acc: 0.7512 Prec: 0.6638 Rec: 0.9461 mAP: 0.8982
+2026-03-03 17:54:31,269 - INFO - Epoch 04/50 [LR: 0.001000] | Train -> Loss: 0.4980 Acc: 0.7573 Prec: 0.7644 Rec: 0.7421 mAP: 0.8416 | Val -> Loss: 0.4943 Acc: 0.7810 Prec: 0.6965 Rec: 0.9404 mAP: 0.9098
+2026-03-03 17:55:04,256 - INFO - Epoch 05/50 [LR: 0.001000] | Train -> Loss: 0.4831 Acc: 0.7711 Prec: 0.7717 Rec: 0.7684 mAP: 0.8505 | Val -> Loss: 0.4188 Acc: 0.8290 Prec: 0.7576 Rec: 0.9314 mAP: 0.9278
+2026-03-03 17:55:36,904 - INFO - Epoch 06/50 [LR: 0.001000] | Train -> Loss: 0.4550 Acc: 0.7895 Prec: 0.7943 Rec: 0.7799 mAP: 0.8715 | Val -> Loss: 0.4321 Acc: 0.8164 Prec: 0.7405 Rec: 0.9339 mAP: 0.9244
+2026-03-03 17:56:09,160 - INFO - Epoch 07/50 [LR: 0.001000] | Train -> Loss: 0.4533 Acc: 0.7905 Prec: 0.7930 Rec: 0.7847 mAP: 0.8686 | Val -> Loss: 0.4390 Acc: 0.8076 Prec: 0.7557 Rec: 0.8686 mAP: 0.8680
+2026-03-03 17:56:41,444 - INFO - Epoch 08/50 [LR: 0.001000] | Train -> Loss: 0.4522 Acc: 0.7852 Prec: 0.7836 Rec: 0.7866 mAP: 0.8682 | Val -> Loss: 0.3857 Acc: 0.8400 Prec: 0.7877 Rec: 0.8996 mAP: 0.9152
+2026-03-03 17:57:13,875 - INFO - Epoch 09/50 [LR: 0.001000] | Train -> Loss: 0.4303 Acc: 0.8048 Prec: 0.8096 Rec: 0.7957 mAP: 0.8811 | Val -> Loss: 0.3371 Acc: 0.8552 Prec: 0.8248 Rec: 0.8759 mAP: 0.9284
+2026-03-03 17:57:14,330 - INFO - Best model updated and saved: custom_cnn_checkpoint\best_custom_cnn_model.pth
+2026-03-03 17:57:46,619 - INFO - Epoch 10/50 [LR: 0.001000] | Train -> Loss: 0.4295 Acc: 0.8017 Prec: 0.8048 Rec: 0.7952 mAP: 0.8813 | Val -> Loss: 0.3367 Acc: 0.8571 Prec: 0.8143 Rec: 0.8988 mAP: 0.9332
+2026-03-03 17:57:47,078 - INFO - Best model updated and saved: custom_cnn_checkpoint\best_custom_cnn_model.pth
+2026-03-03 17:58:19,171 - INFO - Epoch 11/50 [LR: 0.001000] | Train -> Loss: 0.4236 Acc: 0.8088 Prec: 0.8145 Rec: 0.7986 mAP: 0.8903 | Val -> Loss: 0.3511 Acc: 0.8545 Prec: 0.8186 Rec: 0.8841 mAP: 0.9277
+2026-03-03 17:58:51,802 - INFO - Epoch 12/50 [LR: 0.001000] | Train -> Loss: 0.4150 Acc: 0.8103 Prec: 0.8103 Rec: 0.8091 mAP: 0.8946 | Val -> Loss: 0.3802 Acc: 0.8373 Prec: 0.8458 Rec: 0.7967 mAP: 0.9135
+2026-03-03 17:59:24,962 - INFO - Epoch 13/50 [LR: 0.001000] | Train -> Loss: 0.4064 Acc: 0.8158 Prec: 0.8141 Rec: 0.8172 mAP: 0.8973 | Val -> Loss: 0.5345 Acc: 0.7966 Prec: 0.7124 Rec: 0.9461 mAP: 0.9188
+2026-03-03 17:59:57,673 - INFO - Epoch 14/50 [LR: 0.001000] | Train -> Loss: 0.3998 Acc: 0.8148 Prec: 0.8214 Rec: 0.8033 mAP: 0.8970 | Val -> Loss: 0.3200 Acc: 0.8701 Prec: 0.8542 Rec: 0.8702 mAP: 0.9377
+2026-03-03 17:59:58,139 - INFO - Best model updated and saved: custom_cnn_checkpoint\best_custom_cnn_model.pth
+2026-03-03 18:00:31,177 - INFO - Epoch 15/50 [LR: 0.001000] | Train -> Loss: 0.3937 Acc: 0.8291 Prec: 0.8309 Rec: 0.8254 mAP: 0.8986 | Val -> Loss: 0.3236 Acc: 0.8724 Prec: 0.8876 Rec: 0.8318 mAP: 0.9346
+2026-03-03 18:00:31,659 - INFO - Best model updated and saved: custom_cnn_checkpoint\best_custom_cnn_model.pth
+2026-03-03 18:01:04,409 - INFO - Epoch 16/50 [LR: 0.001000] | Train -> Loss: 0.3761 Acc: 0.8327 Prec: 0.8357 Rec: 0.8273 mAP: 0.9120 | Val -> Loss: 0.3447 Acc: 0.8537 Prec: 0.8525 Rec: 0.8302 mAP: 0.9234
+2026-03-03 18:01:37,301 - INFO - Epoch 17/50 [LR: 0.001000] | Train -> Loss: 0.3765 Acc: 0.8358 Prec: 0.8354 Rec: 0.8354 mAP: 0.9110 | Val -> Loss: 0.3560 Acc: 0.8476 Prec: 0.8031 Rec: 0.8922 mAP: 0.9265
+2026-03-03 18:02:10,038 - INFO - Epoch 18/50 [LR: 0.001000] | Train -> Loss: 0.4075 Acc: 0.8215 Prec: 0.8214 Rec: 0.8206 mAP: 0.8952 | Val -> Loss: 0.3519 Acc: 0.8552 Prec: 0.7965 Rec: 0.9265 mAP: 0.9305
+2026-03-03 18:02:42,880 - INFO - Epoch 19/50 [LR: 0.001000] | Train -> Loss: 0.3734 Acc: 0.8427 Prec: 0.8472 Rec: 0.8354 mAP: 0.9142 | Val -> Loss: 0.3410 Acc: 0.8587 Prec: 0.8384 Rec: 0.8637 mAP: 0.9300
+2026-03-03 18:03:15,418 - INFO - Epoch 20/50 [LR: 0.001000] | Train -> Loss: 0.3742 Acc: 0.8277 Prec: 0.8320 Rec: 0.8201 mAP: 0.9132 | Val -> Loss: 0.3567 Acc: 0.8545 Prec: 0.8043 Rec: 0.9094 mAP: 0.9390
+2026-03-03 18:03:48,120 - INFO - Epoch 21/50 [LR: 0.001000] | Train -> Loss: 0.3691 Acc: 0.8356 Prec: 0.8356 Rec: 0.8344 mAP: 0.9192 | Val -> Loss: 0.3525 Acc: 0.8495 Prec: 0.7874 Rec: 0.9282 mAP: 0.9391
+2026-03-03 18:04:20,861 - INFO - Epoch 22/50 [LR: 0.001000] | Train -> Loss: 0.3643 Acc: 0.8368 Prec: 0.8377 Rec: 0.8344 mAP: 0.9164 | Val -> Loss: 0.3523 Acc: 0.8545 Prec: 0.8504 Rec: 0.8351 mAP: 0.9242
+2026-03-03 18:04:53,793 - INFO - Epoch 23/50 [LR: 0.000100] | Train -> Loss: 0.3665 Acc: 0.8363 Prec: 0.8375 Rec: 0.8335 mAP: 0.9185 | Val -> Loss: 0.3180 Acc: 0.8663 Prec: 0.8895 Rec: 0.8147 mAP: 0.9382
+2026-03-03 18:05:26,155 - INFO - Epoch 24/50 [LR: 0.000100] | Train -> Loss: 0.3405 Acc: 0.8484 Prec: 0.8658 Rec: 0.8239 mAP: 0.9279 | Val -> Loss: 0.2900 Acc: 0.8781 Prec: 0.8646 Rec: 0.8759 mAP: 0.9450
+2026-03-03 18:05:26,637 - INFO - Best model updated and saved: custom_cnn_checkpoint\best_custom_cnn_model.pth
+2026-03-03 18:05:59,387 - INFO - Epoch 25/50 [LR: 0.000100] | Train -> Loss: 0.3190 Acc: 0.8580 Prec: 0.8528 Rec: 0.8646 mAP: 0.9362 | Val -> Loss: 0.3004 Acc: 0.8747 Prec: 0.8660 Rec: 0.8653 mAP: 0.9422
+2026-03-03 18:06:31,614 - INFO - Epoch 26/50 [LR: 0.000100] | Train -> Loss: 0.3229 Acc: 0.8585 Prec: 0.8625 Rec: 0.8522 mAP: 0.9351 | Val -> Loss: 0.3069 Acc: 0.8712 Prec: 0.8807 Rec: 0.8376 mAP: 0.9401
+2026-03-03 18:07:04,066 - INFO - Epoch 27/50 [LR: 0.000100] | Train -> Loss: 0.3136 Acc: 0.8663 Prec: 0.8653 Rec: 0.8670 mAP: 0.9383 | Val -> Loss: 0.2972 Acc: 0.8743 Prec: 0.8745 Rec: 0.8531 mAP: 0.9441
+2026-03-03 18:07:36,946 - INFO - Epoch 28/50 [LR: 0.000100] | Train -> Loss: 0.3122 Acc: 0.8711 Prec: 0.8733 Rec: 0.8675 mAP: 0.9395 | Val -> Loss: 0.2962 Acc: 0.8773 Prec: 0.8598 Rec: 0.8808 mAP: 0.9434
+2026-03-03 18:08:09,933 - INFO - Epoch 29/50 [LR: 0.000100] | Train -> Loss: 0.2988 Acc: 0.8737 Prec: 0.8809 Rec: 0.8636 mAP: 0.9449 | Val -> Loss: 0.2938 Acc: 0.8789 Prec: 0.8879 Rec: 0.8473 mAP: 0.9437
+2026-03-03 18:08:10,416 - INFO - Best model updated and saved: custom_cnn_checkpoint\best_custom_cnn_model.pth
+2026-03-03 18:08:43,365 - INFO - Epoch 30/50 [LR: 0.000100] | Train -> Loss: 0.3074 Acc: 0.8773 Prec: 0.8767 Rec: 0.8775 mAP: 0.9427 | Val -> Loss: 0.2961 Acc: 0.8811 Prec: 0.8739 Rec: 0.8710 mAP: 0.9424
+2026-03-03 18:08:43,827 - INFO - Best model updated and saved: custom_cnn_checkpoint\best_custom_cnn_model.pth
+2026-03-03 18:09:16,386 - INFO - Epoch 31/50 [LR: 0.000100] | Train -> Loss: 0.3087 Acc: 0.8673 Prec: 0.8709 Rec: 0.8617 mAP: 0.9436 | Val -> Loss: 0.2959 Acc: 0.8804 Prec: 0.8629 Rec: 0.8841 mAP: 0.9432
+2026-03-03 18:09:48,834 - INFO - Epoch 32/50 [LR: 0.000100] | Train -> Loss: 0.3109 Acc: 0.8637 Prec: 0.8639 Rec: 0.8627 mAP: 0.9388 | Val -> Loss: 0.3020 Acc: 0.8785 Prec: 0.8573 Rec: 0.8873 mAP: 0.9428
+2026-03-03 18:10:21,795 - INFO - Epoch 33/50 [LR: 0.000100] | Train -> Loss: 0.3092 Acc: 0.8687 Prec: 0.8716 Rec: 0.8641 mAP: 0.9400 | Val -> Loss: 0.2954 Acc: 0.8804 Prec: 0.8573 Rec: 0.8922 mAP: 0.9441
+2026-03-03 18:10:54,430 - INFO - Epoch 34/50 [LR: 0.000100] | Train -> Loss: 0.3187 Acc: 0.8630 Prec: 0.8627 Rec: 0.8627 mAP: 0.9339 | Val -> Loss: 0.2942 Acc: 0.8808 Prec: 0.8689 Rec: 0.8767 mAP: 0.9442
+2026-03-03 18:11:27,167 - INFO - Epoch 35/50 [LR: 0.000100] | Train -> Loss: 0.3034 Acc: 0.8695 Prec: 0.8651 Rec: 0.8746 mAP: 0.9409 | Val -> Loss: 0.3099 Acc: 0.8720 Prec: 0.8380 Rec: 0.8996 mAP: 0.9430
+2026-03-03 18:11:59,894 - INFO - Epoch 36/50 [LR: 0.000100] | Train -> Loss: 0.3044 Acc: 0.8742 Prec: 0.8741 Rec: 0.8737 mAP: 0.9418 | Val -> Loss: 0.2954 Acc: 0.8773 Prec: 0.8552 Rec: 0.8873 mAP: 0.9439
+2026-03-03 18:12:32,575 - INFO - Epoch 37/50 [LR: 0.000100] | Train -> Loss: 0.2994 Acc: 0.8737 Prec: 0.8761 Rec: 0.8699 mAP: 0.9430 | Val -> Loss: 0.2937 Acc: 0.8800 Prec: 0.8669 Rec: 0.8776 mAP: 0.9450
+2026-03-03 18:13:05,301 - INFO - Epoch 38/50 [LR: 0.000010] | Train -> Loss: 0.3054 Acc: 0.8683 Prec: 0.8676 Rec: 0.8684 mAP: 0.9414 | Val -> Loss: 0.3015 Acc: 0.8785 Prec: 0.8859 Rec: 0.8490 mAP: 0.9422
+2026-03-03 18:13:38,205 - INFO - Epoch 39/50 [LR: 0.000010] | Train -> Loss: 0.3014 Acc: 0.8718 Prec: 0.8721 Rec: 0.8708 mAP: 0.9450 | Val -> Loss: 0.2982 Acc: 0.8785 Prec: 0.8832 Rec: 0.8522 mAP: 0.9429
+2026-03-03 18:14:11,073 - INFO - Epoch 40/50 [LR: 0.000010] | Train -> Loss: 0.3032 Acc: 0.8721 Prec: 0.8757 Rec: 0.8665 mAP: 0.9411 | Val -> Loss: 0.2971 Acc: 0.8781 Prec: 0.8737 Rec: 0.8637 mAP: 0.9429
+2026-03-03 18:14:43,685 - INFO - Epoch 41/50 [LR: 0.000010] | Train -> Loss: 0.2981 Acc: 0.8745 Prec: 0.8770 Rec: 0.8703 mAP: 0.9440 | Val -> Loss: 0.2955 Acc: 0.8789 Prec: 0.8714 Rec: 0.8686 mAP: 0.9433
+2026-03-03 18:15:16,243 - INFO - Epoch 42/50 [LR: 0.000010] | Train -> Loss: 0.2935 Acc: 0.8790 Prec: 0.8742 Rec: 0.8847 mAP: 0.9467 | Val -> Loss: 0.2948 Acc: 0.8792 Prec: 0.8765 Rec: 0.8629 mAP: 0.9434
+2026-03-03 18:15:49,141 - INFO - Epoch 43/50 [LR: 0.000010] | Train -> Loss: 0.2821 Acc: 0.8828 Prec: 0.8809 Rec: 0.8847 mAP: 0.9525 | Val -> Loss: 0.3041 Acc: 0.8762 Prec: 0.8975 Rec: 0.8294 mAP: 0.9425
+2026-03-03 18:16:21,866 - INFO - Epoch 44/50 [LR: 0.000010] | Train -> Loss: 0.2967 Acc: 0.8764 Prec: 0.8757 Rec: 0.8766 mAP: 0.9451 | Val -> Loss: 0.2974 Acc: 0.8785 Prec: 0.8738 Rec: 0.8645 mAP: 0.9429
+2026-03-03 18:16:54,171 - INFO - Epoch 45/50 [LR: 0.000010] | Train -> Loss: 0.2816 Acc: 0.8800 Prec: 0.8798 Rec: 0.8794 mAP: 0.9517 | Val -> Loss: 0.2971 Acc: 0.8804 Prec: 0.8805 Rec: 0.8604 mAP: 0.9431
+2026-03-03 18:17:26,680 - INFO - Epoch 46/50 [LR: 0.000001] | Train -> Loss: 0.2843 Acc: 0.8783 Prec: 0.8769 Rec: 0.8794 mAP: 0.9500 | Val -> Loss: 0.3027 Acc: 0.8770 Prec: 0.8929 Rec: 0.8367 mAP: 0.9424
+2026-03-03 18:17:59,079 - INFO - Epoch 47/50 [LR: 0.000001] | Train -> Loss: 0.2855 Acc: 0.8764 Prec: 0.8790 Rec: 0.8722 mAP: 0.9493 | Val -> Loss: 0.2977 Acc: 0.8815 Prec: 0.8866 Rec: 0.8555 mAP: 0.9430
+2026-03-03 18:17:59,546 - INFO - Best model updated and saved: custom_cnn_checkpoint\best_custom_cnn_model.pth
+2026-03-03 18:18:31,941 - INFO - Epoch 48/50 [LR: 0.000001] | Train -> Loss: 0.2872 Acc: 0.8804 Prec: 0.8818 Rec: 0.8780 mAP: 0.9497 | Val -> Loss: 0.2991 Acc: 0.8789 Prec: 0.8853 Rec: 0.8506 mAP: 0.9428
+2026-03-03 18:19:04,188 - INFO - Epoch 49/50 [LR: 0.000001] | Train -> Loss: 0.2827 Acc: 0.8773 Prec: 0.8778 Rec: 0.8761 mAP: 0.9522 | Val -> Loss: 0.3003 Acc: 0.8777 Prec: 0.8628 Rec: 0.8776 mAP: 0.9430
+2026-03-03 18:19:36,332 - INFO - Epoch 50/50 [LR: 0.000001] | Train -> Loss: 0.2838 Acc: 0.8773 Prec: 0.8778 Rec: 0.8761 mAP: 0.9519 | Val -> Loss: 0.2988 Acc: 0.8800 Prec: 0.8760 Rec: 0.8653 mAP: 0.9428
+2026-03-03 18:19:36,332 - INFO - Training complete. Best validation accuracy:  0.8815
+2026-03-03 18:51:02,089 - INFO - Number of classes: 2
+2026-03-03 18:51:02,089 - INFO - Class names: ['crocodile', 'non-crocodile']
+2026-03-03 18:51:02,454 - INFO - Model weights initialized with Glorot (Xavier) Normal.
+2026-03-03 18:51:02,538 - INFO - Starting training on device: cuda
+2026-03-03 18:51:39,201 - INFO - Epoch 01/50 [LR: 0.001000] | Train -> Loss: 0.6592 Acc: 0.6344 Prec: 0.6321 Rec: 0.6388 mAP: 0.6692 | Val -> Loss: 0.5654 Acc: 0.7322 Prec: 0.6854 Rec: 0.7878 mAP: 0.7702
+2026-03-03 18:51:39,690 - INFO - Best model updated and saved: custom_cnn_checkpoint\best_custom_cnn_model.pth
+2026-03-03 18:52:13,479 - INFO - Epoch 02/50 [LR: 0.001000] | Train -> Loss: 0.5714 Acc: 0.7112 Prec: 0.7136 Rec: 0.7033 mAP: 0.7853 | Val -> Loss: 0.4053 Acc: 0.8171 Prec: 0.7973 Rec: 0.8155 mAP: 0.8971
+2026-03-03 18:52:13,938 - INFO - Best model updated and saved: custom_cnn_checkpoint\best_custom_cnn_model.pth
+2026-03-03 18:52:47,080 - INFO - Epoch 03/50 [LR: 0.001000] | Train -> Loss: 0.5299 Acc: 0.7411 Prec: 0.7479 Rec: 0.7254 mAP: 0.8241 | Val -> Loss: 0.5294 Acc: 0.7802 Prec: 0.6973 Rec: 0.9347 mAP: 0.8963
+2026-03-03 18:53:20,188 - INFO - Epoch 04/50 [LR: 0.001000] | Train -> Loss: 0.4949 Acc: 0.7647 Prec: 0.7687 Rec: 0.7555 mAP: 0.8417 | Val -> Loss: 0.5383 Acc: 0.7417 Prec: 0.6515 Rec: 0.9600 mAP: 0.9063
+2026-03-03 18:53:53,253 - INFO - Epoch 05/50 [LR: 0.001000] | Train -> Loss: 0.4789 Acc: 0.7776 Prec: 0.7858 Rec: 0.7617 mAP: 0.8511 | Val -> Loss: 0.3779 Acc: 0.8434 Prec: 0.7874 Rec: 0.9102 mAP: 0.9282
+2026-03-03 18:53:53,742 - INFO - Best model updated and saved: custom_cnn_checkpoint\best_custom_cnn_model.pth
+2026-03-03 18:54:26,625 - INFO - Epoch 06/50 [LR: 0.001000] | Train -> Loss: 0.4545 Acc: 0.7859 Prec: 0.7866 Rec: 0.7833 mAP: 0.8686 | Val -> Loss: 0.5028 Acc: 0.7882 Prec: 0.7007 Rec: 0.9535 mAP: 0.9223
+2026-03-03 18:54:59,772 - INFO - Epoch 07/50 [LR: 0.001000] | Train -> Loss: 0.4443 Acc: 0.7964 Prec: 0.7984 Rec: 0.7919 mAP: 0.8746 | Val -> Loss: 0.5557 Acc: 0.7467 Prec: 0.6679 Rec: 0.9094 mAP: 0.8551
+2026-03-03 18:55:32,677 - INFO - Epoch 08/50 [LR: 0.001000] | Train -> Loss: 0.4464 Acc: 0.7936 Prec: 0.7891 Rec: 0.8000 mAP: 0.8698 | Val -> Loss: 0.3602 Acc: 0.8472 Prec: 0.8112 Rec: 0.8767 mAP: 0.9244
+2026-03-03 18:55:33,192 - INFO - Best model updated and saved: custom_cnn_checkpoint\best_custom_cnn_model.pth
+2026-03-03 18:56:06,338 - INFO - Epoch 09/50 [LR: 0.001000] | Train -> Loss: 0.4381 Acc: 0.7933 Prec: 0.7971 Rec: 0.7856 mAP: 0.8784 | Val -> Loss: 0.3223 Acc: 0.8640 Prec: 0.8375 Rec: 0.8792 mAP: 0.9322
+2026-03-03 18:56:06,797 - INFO - Best model updated and saved: custom_cnn_checkpoint\best_custom_cnn_model.pth
+2026-03-03 18:56:39,873 - INFO - Epoch 10/50 [LR: 0.001000] | Train -> Loss: 0.4310 Acc: 0.8076 Prec: 0.8113 Rec: 0.8005 mAP: 0.8792 | Val -> Loss: 0.3289 Acc: 0.8587 Prec: 0.8126 Rec: 0.9061 mAP: 0.9335
+2026-03-03 18:57:12,730 - INFO - Epoch 11/50 [LR: 0.001000] | Train -> Loss: 0.4268 Acc: 0.8093 Prec: 0.8156 Rec: 0.7981 mAP: 0.8879 | Val -> Loss: 0.3712 Acc: 0.8461 Prec: 0.7990 Rec: 0.8955 mAP: 0.9240
+2026-03-03 18:57:45,776 - INFO - Epoch 12/50 [LR: 0.001000] | Train -> Loss: 0.4046 Acc: 0.8177 Prec: 0.8175 Rec: 0.8167 mAP: 0.9007 | Val -> Loss: 0.3661 Acc: 0.8423 Prec: 0.8326 Rec: 0.8286 mAP: 0.9180
+2026-03-03 18:58:18,314 - INFO - Epoch 13/50 [LR: 0.001000] | Train -> Loss: 0.3987 Acc: 0.8222 Prec: 0.8171 Rec: 0.8292 mAP: 0.9021 | Val -> Loss: 0.4862 Acc: 0.8156 Prec: 0.7338 Rec: 0.9494 mAP: 0.9308
+2026-03-03 18:58:51,504 - INFO - Epoch 14/50 [LR: 0.001000] | Train -> Loss: 0.3835 Acc: 0.8277 Prec: 0.8317 Rec: 0.8206 mAP: 0.9060 | Val -> Loss: 0.3229 Acc: 0.8644 Prec: 0.8473 Rec: 0.8653 mAP: 0.9365
+2026-03-03 18:58:51,966 - INFO - Best model updated and saved: custom_cnn_checkpoint\best_custom_cnn_model.pth
+2026-03-03 18:59:25,416 - INFO - Epoch 15/50 [LR: 0.001000] | Train -> Loss: 0.3901 Acc: 0.8265 Prec: 0.8262 Rec: 0.8258 mAP: 0.9007 | Val -> Loss: 0.3401 Acc: 0.8545 Prec: 0.8747 Rec: 0.8033 mAP: 0.9291
+2026-03-03 18:59:58,303 - INFO - Epoch 16/50 [LR: 0.001000] | Train -> Loss: 0.3757 Acc: 0.8348 Prec: 0.8364 Rec: 0.8316 mAP: 0.9103 | Val -> Loss: 0.3784 Acc: 0.8430 Prec: 0.8173 Rec: 0.8547 mAP: 0.9096
+2026-03-03 19:00:31,413 - INFO - Epoch 17/50 [LR: 0.001000] | Train -> Loss: 0.3733 Acc: 0.8379 Prec: 0.8339 Rec: 0.8431 mAP: 0.9132 | Val -> Loss: 0.3284 Acc: 0.8724 Prec: 0.8428 Rec: 0.8931 mAP: 0.9345
+2026-03-03 19:00:31,879 - INFO - Best model updated and saved: custom_cnn_checkpoint\best_custom_cnn_model.pth
+2026-03-03 19:01:04,670 - INFO - Epoch 18/50 [LR: 0.001000] | Train -> Loss: 0.3987 Acc: 0.8212 Prec: 0.8200 Rec: 0.8220 mAP: 0.9007 | Val -> Loss: 0.3576 Acc: 0.8450 Prec: 0.7767 Rec: 0.9371 mAP: 0.9403
+2026-03-03 19:01:37,568 - INFO - Epoch 19/50 [LR: 0.001000] | Train -> Loss: 0.3655 Acc: 0.8413 Prec: 0.8481 Rec: 0.8306 mAP: 0.9187 | Val -> Loss: 0.3389 Acc: 0.8530 Prec: 0.8419 Rec: 0.8433 mAP: 0.9331
+2026-03-03 19:02:10,499 - INFO - Epoch 20/50 [LR: 0.001000] | Train -> Loss: 0.3779 Acc: 0.8265 Prec: 0.8303 Rec: 0.8196 mAP: 0.9111 | Val -> Loss: 0.4381 Acc: 0.8290 Prec: 0.7573 Rec: 0.9322 mAP: 0.9320
+2026-03-03 19:02:43,418 - INFO - Epoch 21/50 [LR: 0.001000] | Train -> Loss: 0.3646 Acc: 0.8375 Prec: 0.8385 Rec: 0.8349 mAP: 0.9186 | Val -> Loss: 0.3155 Acc: 0.8632 Prec: 0.8174 Rec: 0.9102 mAP: 0.9437
+2026-03-03 19:03:16,248 - INFO - Epoch 22/50 [LR: 0.001000] | Train -> Loss: 0.3649 Acc: 0.8348 Prec: 0.8335 Rec: 0.8359 mAP: 0.9156 | Val -> Loss: 0.3216 Acc: 0.8667 Prec: 0.8637 Rec: 0.8482 mAP: 0.9372
+2026-03-03 19:03:48,983 - INFO - Epoch 23/50 [LR: 0.001000] | Train -> Loss: 0.3610 Acc: 0.8403 Prec: 0.8372 Rec: 0.8440 mAP: 0.9196 | Val -> Loss: 0.3164 Acc: 0.8701 Prec: 0.8884 Rec: 0.8253 mAP: 0.9385
+2026-03-03 19:04:21,875 - INFO - Epoch 24/50 [LR: 0.001000] | Train -> Loss: 0.3587 Acc: 0.8396 Prec: 0.8396 Rec: 0.8388 mAP: 0.9193 | Val -> Loss: 0.2828 Acc: 0.8857 Prec: 0.8890 Rec: 0.8629 mAP: 0.9518
+2026-03-03 19:04:22,340 - INFO - Best model updated and saved: custom_cnn_checkpoint\best_custom_cnn_model.pth
+2026-03-03 19:04:55,345 - INFO - Epoch 25/50 [LR: 0.001000] | Train -> Loss: 0.3485 Acc: 0.8444 Prec: 0.8408 Rec: 0.8488 mAP: 0.9240 | Val -> Loss: 0.3192 Acc: 0.8621 Prec: 0.8654 Rec: 0.8343 mAP: 0.9345
+2026-03-03 19:05:28,495 - INFO - Epoch 26/50 [LR: 0.001000] | Train -> Loss: 0.3582 Acc: 0.8444 Prec: 0.8434 Rec: 0.8450 mAP: 0.9184 | Val -> Loss: 0.2746 Acc: 0.8880 Prec: 0.8739 Rec: 0.8882 mAP: 0.9530
+2026-03-03 19:05:28,968 - INFO - Best model updated and saved: custom_cnn_checkpoint\best_custom_cnn_model.pth
+2026-03-03 19:06:02,010 - INFO - Epoch 27/50 [LR: 0.001000] | Train -> Loss: 0.3387 Acc: 0.8482 Prec: 0.8449 Rec: 0.8522 mAP: 0.9284 | Val -> Loss: 0.3131 Acc: 0.8747 Prec: 0.9164 Rec: 0.8049 mAP: 0.9488
+2026-03-03 19:06:34,844 - INFO - Epoch 28/50 [LR: 0.001000] | Train -> Loss: 0.3528 Acc: 0.8468 Prec: 0.8484 Rec: 0.8435 mAP: 0.9204 | Val -> Loss: 0.2871 Acc: 0.8773 Prec: 0.8638 Rec: 0.8751 mAP: 0.9443
+2026-03-03 19:07:07,742 - INFO - Epoch 29/50 [LR: 0.001000] | Train -> Loss: 0.3281 Acc: 0.8589 Prec: 0.8588 Rec: 0.8584 mAP: 0.9326 | Val -> Loss: 0.3040 Acc: 0.8762 Prec: 0.8695 Rec: 0.8645 mAP: 0.9419
+2026-03-03 19:07:40,359 - INFO - Epoch 30/50 [LR: 0.001000] | Train -> Loss: 0.3297 Acc: 0.8604 Prec: 0.8561 Rec: 0.8656 mAP: 0.9319 | Val -> Loss: 0.3332 Acc: 0.8724 Prec: 0.8672 Rec: 0.8580 mAP: 0.9388
+2026-03-03 19:08:13,442 - INFO - Epoch 31/50 [LR: 0.001000] | Train -> Loss: 0.3402 Acc: 0.8525 Prec: 0.8501 Rec: 0.8550 mAP: 0.9307 | Val -> Loss: 0.3025 Acc: 0.8750 Prec: 0.8608 Rec: 0.8735 mAP: 0.9407
+2026-03-03 19:08:46,644 - INFO - Epoch 32/50 [LR: 0.001000] | Train -> Loss: 0.3411 Acc: 0.8547 Prec: 0.8525 Rec: 0.8569 mAP: 0.9268 | Val -> Loss: 0.3738 Acc: 0.8590 Prec: 0.8034 Rec: 0.9241 mAP: 0.9393
+2026-03-03 19:09:19,577 - INFO - Epoch 33/50 [LR: 0.001000] | Train -> Loss: 0.3307 Acc: 0.8561 Prec: 0.8573 Rec: 0.8536 mAP: 0.9364 | Val -> Loss: 0.2953 Acc: 0.8815 Prec: 0.9066 Rec: 0.8318 mAP: 0.9477
+2026-03-03 19:09:52,683 - INFO - Epoch 34/50 [LR: 0.000100] | Train -> Loss: 0.3479 Acc: 0.8465 Prec: 0.8467 Rec: 0.8455 mAP: 0.9236 | Val -> Loss: 0.3078 Acc: 0.8815 Prec: 0.8899 Rec: 0.8514 mAP: 0.9442
+2026-03-03 19:10:25,529 - INFO - Epoch 35/50 [LR: 0.000100] | Train -> Loss: 0.2951 Acc: 0.8752 Prec: 0.8636 Rec: 0.8904 mAP: 0.9459 | Val -> Loss: 0.2883 Acc: 0.8808 Prec: 0.8502 Rec: 0.9037 mAP: 0.9520
+2026-03-03 19:10:58,299 - INFO - Epoch 36/50 [LR: 0.000100] | Train -> Loss: 0.2914 Acc: 0.8761 Prec: 0.8800 Rec: 0.8703 mAP: 0.9472 | Val -> Loss: 0.2862 Acc: 0.8838 Prec: 0.8560 Rec: 0.9029 mAP: 0.9507
+2026-03-03 19:11:31,425 - INFO - Epoch 37/50 [LR: 0.000100] | Train -> Loss: 0.2829 Acc: 0.8819 Prec: 0.8825 Rec: 0.8804 mAP: 0.9505 | Val -> Loss: 0.2737 Acc: 0.8895 Prec: 0.8725 Rec: 0.8939 mAP: 0.9538
+2026-03-03 19:11:31,887 - INFO - Best model updated and saved: custom_cnn_checkpoint\best_custom_cnn_model.pth
+2026-03-03 19:12:04,764 - INFO - Epoch 38/50 [LR: 0.000100] | Train -> Loss: 0.2853 Acc: 0.8790 Prec: 0.8796 Rec: 0.8775 mAP: 0.9497 | Val -> Loss: 0.2915 Acc: 0.8838 Prec: 0.8966 Rec: 0.8490 mAP: 0.9486
+2026-03-03 19:12:37,531 - INFO - Epoch 39/50 [LR: 0.000100] | Train -> Loss: 0.2863 Acc: 0.8785 Prec: 0.8759 Rec: 0.8813 mAP: 0.9508 | Val -> Loss: 0.2838 Acc: 0.8884 Prec: 0.8883 Rec: 0.8702 mAP: 0.9503
+2026-03-03 19:13:10,361 - INFO - Epoch 40/50 [LR: 0.000100] | Train -> Loss: 0.2900 Acc: 0.8752 Prec: 0.8747 Rec: 0.8751 mAP: 0.9454 | Val -> Loss: 0.2759 Acc: 0.8903 Prec: 0.8901 Rec: 0.8727 mAP: 0.9528
+2026-03-03 19:13:10,830 - INFO - Best model updated and saved: custom_cnn_checkpoint\best_custom_cnn_model.pth
+2026-03-03 19:13:43,900 - INFO - Epoch 41/50 [LR: 0.000100] | Train -> Loss: 0.2796 Acc: 0.8850 Prec: 0.8821 Rec: 0.8880 mAP: 0.9515 | Val -> Loss: 0.2712 Acc: 0.8899 Prec: 0.8887 Rec: 0.8735 mAP: 0.9541
+2026-03-03 19:14:16,992 - INFO - Epoch 42/50 [LR: 0.000100] | Train -> Loss: 0.2733 Acc: 0.8852 Prec: 0.8851 Rec: 0.8847 mAP: 0.9541 | Val -> Loss: 0.2829 Acc: 0.8869 Prec: 0.8822 Rec: 0.8743 mAP: 0.9518
+2026-03-03 19:14:49,986 - INFO - Epoch 43/50 [LR: 0.000100] | Train -> Loss: 0.2687 Acc: 0.8881 Prec: 0.8869 Rec: 0.8890 mAP: 0.9557 | Val -> Loss: 0.2782 Acc: 0.8933 Prec: 0.8981 Rec: 0.8702 mAP: 0.9541
+2026-03-03 19:14:50,440 - INFO - Best model updated and saved: custom_cnn_checkpoint\best_custom_cnn_model.pth
+2026-03-03 19:15:23,144 - INFO - Epoch 44/50 [LR: 0.000100] | Train -> Loss: 0.2803 Acc: 0.8840 Prec: 0.8852 Rec: 0.8818 mAP: 0.9504 | Val -> Loss: 0.2794 Acc: 0.8933 Prec: 0.8851 Rec: 0.8865 mAP: 0.9524
+2026-03-03 19:15:55,909 - INFO - Epoch 45/50 [LR: 0.000100] | Train -> Loss: 0.2637 Acc: 0.8866 Prec: 0.8843 Rec: 0.8890 mAP: 0.9575 | Val -> Loss: 0.2916 Acc: 0.8876 Prec: 0.8849 Rec: 0.8727 mAP: 0.9500
+2026-03-03 19:16:28,634 - INFO - Epoch 46/50 [LR: 0.000100] | Train -> Loss: 0.2681 Acc: 0.8895 Prec: 0.8879 Rec: 0.8909 mAP: 0.9554 | Val -> Loss: 0.2906 Acc: 0.8895 Prec: 0.9112 Rec: 0.8457 mAP: 0.9521
+2026-03-03 19:17:01,817 - INFO - Epoch 47/50 [LR: 0.000100] | Train -> Loss: 0.2659 Acc: 0.8902 Prec: 0.8881 Rec: 0.8923 mAP: 0.9549 | Val -> Loss: 0.2728 Acc: 0.8945 Prec: 0.9086 Rec: 0.8604 mAP: 0.9557
+2026-03-03 19:17:02,287 - INFO - Best model updated and saved: custom_cnn_checkpoint\best_custom_cnn_model.pth
+2026-03-03 19:17:35,307 - INFO - Epoch 48/50 [LR: 0.000100] | Train -> Loss: 0.2642 Acc: 0.8912 Prec: 0.8872 Rec: 0.8957 mAP: 0.9566 | Val -> Loss: 0.2819 Acc: 0.8895 Prec: 0.8873 Rec: 0.8743 mAP: 0.9522
+2026-03-03 19:18:08,321 - INFO - Epoch 49/50 [LR: 0.000100] | Train -> Loss: 0.2616 Acc: 0.8902 Prec: 0.8907 Rec: 0.8890 mAP: 0.9595 | Val -> Loss: 0.2922 Acc: 0.8869 Prec: 0.8893 Rec: 0.8653 mAP: 0.9497
+2026-03-03 19:18:41,244 - INFO - Epoch 50/50 [LR: 0.000100] | Train -> Loss: 0.2640 Acc: 0.8840 Prec: 0.8878 Rec: 0.8785 mAP: 0.9585 | Val -> Loss: 0.2815 Acc: 0.8930 Prec: 0.8901 Rec: 0.8792 mAP: 0.9532
+2026-03-03 19:18:41,244 - INFO - Training complete. Best validation accuracy:  0.8945

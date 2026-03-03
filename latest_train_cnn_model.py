@@ -6,6 +6,8 @@ import torchvision.transforms as transforms
 from torchvision import datasets
 from datetime import datetime
 import logging
+from sklearn.metrics import average_precision_score
+import numpy as np
 
 # Configure logging to save progress to the NEW log file
 logging.basicConfig(
@@ -109,7 +111,7 @@ class CustomCNNTrainer:
         train_transform = transforms.Compose([
             transforms.RandomResizedCrop(224),
             transforms.RandomHorizontalFlip(),
-            transforms.RandomRotation(30),
+            transforms.RandomRotation(30), 
             transforms.RandomAffine(degrees=0, translate=(0.1, 0.1), scale=(0.9, 1.1), shear=10),
             transforms.ColorJitter(brightness=0.4, contrast=0.4, saturation=0.4, hue=0.1),
             transforms.ToTensor(),
@@ -137,7 +139,7 @@ class CustomCNNTrainer:
         )
         logging.info(f'Number of classes: {len(train_dataset.classes)}')
         logging.info(f'Class names: {train_dataset.classes}')
-        # Record the index for 'crocodile' class (usually 0 if alphabetically sorted)
+        # Record the index for 'crocodile' class
         self.crocodile_idx = train_dataset.classes.index('crocodile')
         return train_loader, val_loader, len(train_dataset.classes)
     
@@ -158,6 +160,9 @@ class CustomCNNTrainer:
         running_fp = 0
         running_fn = 0
 
+        all_labels = []
+        all_probs = []
+
         for inputs, labels in self.train_loader:
             inputs, labels = inputs.to(self.device), labels.to(self.device)
             self.optimizer.zero_grad()
@@ -171,19 +176,26 @@ class CustomCNNTrainer:
             running_corrects += torch.sum(preds == labels.data)
             total += labels.size(0)
 
-            # Calculate True Positives, False Positives, False Negatives for the 'crocodile' class
+            # Calculate True Positives, False Positives, False Negatives
             running_tp += torch.sum((preds == self.crocodile_idx) & (labels.data == self.crocodile_idx)).item()
             running_fp += torch.sum((preds == self.crocodile_idx) & (labels.data != self.crocodile_idx)).item()
             running_fn += torch.sum((preds != self.crocodile_idx) & (labels.data == self.crocodile_idx)).item()
 
+            # Calculate probabilities for mAP (AP)
+            probs = torch.softmax(outputs, dim=1)
+            binary_labels = (labels.data == self.crocodile_idx).cpu().numpy()
+            croc_probs = probs[:, self.crocodile_idx].detach().cpu().numpy()
+            all_labels.extend(binary_labels)
+            all_probs.extend(croc_probs)
+
         epoch_loss = running_loss / total
         epoch_acc = running_corrects.double() / total
         
-        # Calculate Precision and Recall
         precision = running_tp / (running_tp + running_fp) if (running_tp + running_fp) > 0 else 0.0
         recall = running_tp / (running_tp + running_fn) if (running_tp + running_fn) > 0 else 0.0
+        epoch_map = average_precision_score(all_labels, all_probs) if len(set(all_labels)) > 1 else 0.0
         
-        return epoch_loss, epoch_acc.item(), precision, recall
+        return epoch_loss, epoch_acc.item(), precision, recall, epoch_map
     
     def validate(self):
         self.model.eval()
@@ -194,6 +206,9 @@ class CustomCNNTrainer:
         running_tp = 0
         running_fp = 0
         running_fn = 0
+
+        all_labels = []
+        all_probs = []
 
         with torch.no_grad():
             for inputs, labels in self.val_loader:
@@ -206,19 +221,24 @@ class CustomCNNTrainer:
                 running_corrects += torch.sum(preds == labels.data)
                 total += labels.size(0)
 
-                # Calculate True Positives, False Positives, False Negatives for the 'crocodile' class
                 running_tp += torch.sum((preds == self.crocodile_idx) & (labels.data == self.crocodile_idx)).item()
                 running_fp += torch.sum((preds == self.crocodile_idx) & (labels.data != self.crocodile_idx)).item()
                 running_fn += torch.sum((preds != self.crocodile_idx) & (labels.data == self.crocodile_idx)).item()
 
+                probs = torch.softmax(outputs, dim=1)
+                binary_labels = (labels.data == self.crocodile_idx).cpu().numpy()
+                croc_probs = probs[:, self.crocodile_idx].cpu().numpy()
+                all_labels.extend(binary_labels)
+                all_probs.extend(croc_probs)
+
             epoch_loss = running_loss / total
             epoch_acc = running_corrects.double() / total
             
-            # Calculate Precision and Recall
             precision = running_tp / (running_tp + running_fp) if (running_tp + running_fp) > 0 else 0.0
             recall = running_tp / (running_tp + running_fn) if (running_tp + running_fn) > 0 else 0.0
+            epoch_map = average_precision_score(all_labels, all_probs) if len(set(all_labels)) > 1 else 0.0
             
-            return epoch_loss, epoch_acc.item(), precision, recall
+            return epoch_loss, epoch_acc.item(), precision, recall, epoch_map
         
     def save_checkpoint(self, epoch, acc):
         checkpoint_dir = 'custom_cnn_checkpoint'
@@ -243,19 +263,17 @@ class CustomCNNTrainer:
         logging.info(f'Starting training on device: {self.device}')
 
         for epoch in range(1, self.num_epochs + 1):
-            train_loss, train_acc, train_prec, train_rec = self.train_epoch()
-            val_loss, val_acc, val_prec, val_rec = self.validate()
+            train_loss, train_acc, train_prec, train_rec, train_map = self.train_epoch()
+            val_loss, val_acc, val_prec, val_rec, val_map = self.validate()
             
-            # Step the scheduler based on validation accuracy
             self.scheduler.step(val_acc)
             
-            # Retrieve current Learning Rate
             current_lr = self.optimizer.param_groups[0]['lr']
 
             logging.info(
                 f'Epoch {epoch:02d}/{self.num_epochs} [LR: {current_lr:.6f}] | '
-                f'Train -> Loss: {train_loss:.4f} Acc: {train_acc:.4f} Prec: {train_prec:.4f} Rec: {train_rec:.4f} | '
-                f'Val -> Loss: {val_loss:.4f} Acc: {val_acc:.4f} Prec: {val_prec:.4f} Rec: {val_rec:.4f}'
+                f'Train -> Loss: {train_loss:.4f} Acc: {train_acc:.4f} Prec: {train_prec:.4f} Rec: {train_rec:.4f} mAP: {train_map:.4f} | '
+                f'Val -> Loss: {val_loss:.4f} Acc: {val_acc:.4f} Prec: {val_prec:.4f} Rec: {val_rec:.4f} mAP: {val_map:.4f}'
             )
             self.save_checkpoint(epoch, val_acc)
 
