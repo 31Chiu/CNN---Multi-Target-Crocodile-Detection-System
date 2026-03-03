@@ -97,7 +97,7 @@ class CustomCNNTrainer:
             self.optimizer,
             mode='max',
             factor=0.1,
-            patience=3
+            patience=7
         )
         self.best_acc = 0.0
 
@@ -109,12 +109,12 @@ class CustomCNNTrainer:
         train_transform = transforms.Compose([
             transforms.RandomResizedCrop(224),
             transforms.RandomHorizontalFlip(),
-            transforms.RandomRotation(45), 
+            transforms.RandomRotation(30),
             transforms.RandomAffine(degrees=0, translate=(0.1, 0.1), scale=(0.9, 1.1), shear=10),
             transforms.ColorJitter(brightness=0.4, contrast=0.4, saturation=0.4, hue=0.1),
             transforms.ToTensor(),
             transforms.Normalize(mean, std),
-            transforms.RandomErasing(p=0.5, scale=(0.02, 0.2), ratio=(0.3, 3.3), value='random') 
+            transforms.RandomErasing(p=0.2, scale=(0.02, 0.2), ratio=(0.3, 3.3), value='random') 
         ])
 
         val_transform = transforms.Compose([
