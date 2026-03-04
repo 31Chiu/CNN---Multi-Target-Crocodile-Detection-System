@@ -82,14 +82,14 @@ def main():
     plt.axis('off')
     
     plt.subplot(1, 2, 2)
-    plt.title("Grad-CAM Heatmap")
+    plt.title("Custom CNN Grad-CAM Heatmap")
     plt.imshow(visualization)
     plt.axis('off')
     
     plt.tight_layout()
     
     # Save the results to the specified output directory
-    output_path = os.path.join(output_dir, f"heatmap_{image_name}")
+    output_path = os.path.join(output_dir, f"customCNN_heatmap_{image_name}")
     plt.savefig(output_path)
     print(f"Analysis complete! Heatmap saved as {output_path}")
 
