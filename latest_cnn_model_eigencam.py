@@ -46,8 +46,10 @@ def main():
     rgb_img_float = np.float32(rgb_img) / 255
     
     transform = transforms.Compose([
-        transforms.Resize(256),
-        transforms.CenterCrop(224),
+        # transforms.Resize(256),
+        # transforms.CenterCrop(224),
+        transforms.Resize(680),
+        transforms.CenterCrop(640),
         transforms.ToTensor(),
         transforms.Normalize(mean, std)
     ])
@@ -60,7 +62,8 @@ def main():
     grayscale_cam = cam(input_tensor=input_tensor, targets=None)[0, :]
     
     # 将热力图叠加到裁剪后的原图上
-    resized_img = cv2.resize(rgb_img_float, (224, 224))
+    # resized_img = cv2.resize(rgb_img_float, (224, 224))
+    resized_img = cv2.resize(rgb_img_float, (640, 640))
     visualization = show_cam_on_image(resized_img, grayscale_cam, use_rgb=True)
 
     # 5. 保存结果

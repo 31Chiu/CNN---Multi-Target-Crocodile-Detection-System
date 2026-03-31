@@ -162,8 +162,10 @@ def main():
     # 2. Prepare the dataset
     # Use the same transformations as the model's validation phase to ensure consistency
     transform = transforms.Compose([
-        transforms.Resize(256),
-        transforms.CenterCrop(224),
+        # transforms.Resize(256),
+        # transforms.CenterCrop(224),
+        transforms.Resize(680),
+        transforms.CenterCrop(640),
         transforms.ToTensor(),
         transforms.Normalize(mean=[0.485, 0.456, 0.406], std=[0.229, 0.224, 0.225]),
     ])
@@ -173,8 +175,10 @@ def main():
     test_dataset = datasets.ImageFolder(root=os.path.join(DATASET_PATH, 'Validation'), transform=transform)
     logging.info(f'Found {len(train_dataset)} training images and {len(test_dataset)} validation images.')
 
-    train_loader = DataLoader(train_dataset, batch_size=32, shuffle=False, num_workers=4, pin_memory=True)
-    test_loader = DataLoader(test_dataset, batch_size=32, shuffle=False, num_workers=4, pin_memory=True)
+    # train_loader = DataLoader(train_dataset, batch_size=32, shuffle=False, num_workers=4, pin_memory=True)
+    # test_loader = DataLoader(test_dataset, batch_size=32, shuffle=False, num_workers=4, pin_memory=True)
+    train_loader = DataLoader(train_dataset, batch_size=32, shuffle=False, num_workers=0, pin_memory=False)
+    test_loader = DataLoader(test_dataset, batch_size=32, shuffle=False, num_workers=0, pin_memory=False)
 
     # 3. Extract features from both training and validation sets
     logging.info("Extracting features from the training set...")
